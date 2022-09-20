@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#"
-     xml:base="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals"
+<rdf:RDF xmlns="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL#"
+     xml:base="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:OrgSL="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#"
-     xmlns:orgsl-v0="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#">
+     xmlns:orgsl-v0="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl"/>
     
 
