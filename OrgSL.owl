@@ -6,7 +6,6 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:OrgSL="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#"
      xmlns:orgsl-v0="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#">
     <owl:Ontology rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl"/>
     
@@ -244,12 +243,23 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b4eb133e-3936-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b4eb133e-3936-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:unitName>Mission</orgsl-v0:unitName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <OrgSL:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Analytics</OrgSL:teamName>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002"/>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:teamName>Analytics</orgsl-v0:teamName>
     </owl:NamedIndividual>
     
 
@@ -259,8 +269,18 @@
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ec441dfa-3934-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002"/>
-        <OrgSL:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Team K2</OrgSL:teamName>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:teamName>Team K2</orgsl-v0:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ef5fbc86-3936-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ef5fbc86-3936-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002"/>
+        <orgsl-v0:unitName>Business Unit</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
 
@@ -269,8 +289,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <OrgSL:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Video</OrgSL:teamName>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002"/>
+        <orgsl-v0:teamName>Video</orgsl-v0:teamName>
     </owl:NamedIndividual>
     
 
@@ -279,8 +299,18 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <OrgSL:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Piperchat</OrgSL:teamName>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002"/>
+        <orgsl-v0:teamName>Piperchat</orgsl-v0:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#091b9ca8-3937-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#091b9ca8-3937-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002"/>
+        <orgsl-v0:unitName>Company</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
 
@@ -289,8 +319,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2ddf9d3e-3863-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-        <OrgSL:member rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
-        <OrgSL:personName>Rose Elliott</OrgSL:personName>
+        <orgsl-v0:member rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+        <orgsl-v0:personName>Rose Elliott</orgsl-v0:personName>
     </owl:NamedIndividual>
     
 
@@ -300,7 +330,16 @@
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Pied Piper</OrgSL:teamName>
+        <orgsl-v0:teamName>Pied Piper</orgsl-v0:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <orgsl-v0:unitName>Tribe</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
 
@@ -310,9 +349,9 @@
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002"/>
-        <OrgSL:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
-        <OrgSL:teamName>Team Apollo</OrgSL:teamName>
-        <OrgSL:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</OrgSL:teamPurpose>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:teamName>Team Apollo</orgsl-v0:teamName>
+        <orgsl-v0:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</orgsl-v0:teamPurpose>
     </owl:NamedIndividual>
     
 
@@ -321,7 +360,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <OrgSL:unitName>Squad</OrgSL:unitName>
+        <orgsl-v0:unitName>Squad</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
 
@@ -330,7 +369,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-        <OrgSL:personName>Aron Roberts</OrgSL:personName>
+        <orgsl-v0:personName>Aron Roberts</orgsl-v0:personName>
     </owl:NamedIndividual>
     
 
@@ -339,7 +378,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
-        <OrgSL:webDomain>piedpiper.com</OrgSL:webDomain>
+        <orgsl-v0:hasUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:webDomain>piedpiper.com</orgsl-v0:webDomain>
     </owl:NamedIndividual>
 </rdf:RDF>
 
