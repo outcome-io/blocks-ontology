@@ -6,8 +6,9 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:OrgSL="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#"
      xmlns:orgsl-v0="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals"/>
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl"/>
     
 
 
@@ -22,99 +23,99 @@
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#childTeamOf -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#childTeamOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#childTeamOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#transitiveChildTeam"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasChildTeam"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#childTeamOf">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam"/>
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildTeam"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasChildTeam -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildTeam -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasChildTeam">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildTeam">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasLeader -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasLeader -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasLeader">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#leaderOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasLeader">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#leaderOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <rdfs:comment>Indicates a Person who is a leader in a particular Team. Inverse of `team:leaderOf`, see that property for further clarification.</rdfs:comment>
         <rdfs:label>hasLeader</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasMember -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasMember -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasMember">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#member"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasMember">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#member"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <rdfs:comment>Indicates a Person who is a member of a particular Team. Inverse of `team:memberOf`, see that property for further clarification.</rdfs:comment>
         <rdfs:label>hasMember</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasUnit -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasUnit -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasUnit">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#hasChildTeam"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#unitOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Topology"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Organization"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildTeam"/>
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#leaderOf -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#leaderOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#leaderOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#leaderOf">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>Indicates that a Person is in a leadership role for a Team. A Team may have more than one lead.</rdfs:comment>
         <rdfs:label>leaderOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#member -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#member -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#member">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#member">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>Indicates that a Person is a member of a Team with no indication of the nature of that membership or the Role played.</rdfs:comment>
         <rdfs:label>memberOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#transitiveChildTeam -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#transitiveChildTeam">
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#unitOf -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#unitOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#childTeamOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Topology"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Organization"/>
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#childTeamOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
     </owl:ObjectProperty>
     
 
@@ -130,50 +131,50 @@
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#personName -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#personName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#personName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#personName">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#teamName -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#teamName">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#teamPurpose -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamPurpose -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#teamPurpose">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamPurpose">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#unitName -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#unitName">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Topology"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#webDomain -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#webDomain -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#webDomain">
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#webDomain">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Organization"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
@@ -190,38 +191,38 @@
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Organization -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>An Organization which is formally recognized in the world at large</rdfs:comment>
         <rdfs:label>Organization</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person">
         <rdfs:comment>A human being regarded as a person.</rdfs:comment>
         <rdfs:label>Person</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team">
+    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team">
         <rdfs:comment>Group of people working collaboratively towards a shared goal</rdfs:comment>
         <rdfs:label>Team</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Topology -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Topology">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
+    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>How organizations are divided into team structures</rdfs:comment>
         <rdfs:label>TopologyUnit</rdfs:label>
     </owl:Class>
@@ -239,31 +240,77 @@
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#2ddf9d3e-3863-11ed-a261-0242ac120002 -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#2ddf9d3e-3863-11ed-a261-0242ac120002">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
-        <orgsl-v0:member rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#7d4dd398-3865-11ed-a261-0242ac120002"/>
-        <orgsl-v0:personName>Rose Elliott</orgsl-v0:personName>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <OrgSL:teamName>Analytics</OrgSL:teamName>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#7d4dd398-3865-11ed-a261-0242ac120002 -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#7d4dd398-3865-11ed-a261-0242ac120002">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Team"/>
-        <orgsl-v0:teamName>Team Apollo</orgsl-v0:teamName>
-        <orgsl-v0:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</orgsl-v0:teamPurpose>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <OrgSL:teamName>Video</OrgSL:teamName>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#809af98a-3861-11ed-a261-0242ac120002 -->
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#809af98a-3861-11ed-a261-0242ac120002">
-        <rdf:type rdf:resource="http://www.semanticweb.org/vignir/ontologies/2022/8/orgsl-v0.4-individuals#Person"/>
-        <orgsl-v0:personName>Aron Roberts</orgsl-v0:personName>
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <OrgSL:teamName>Piperchat</OrgSL:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2ddf9d3e-3863-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2ddf9d3e-3863-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <OrgSL:member rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+        <OrgSL:personName>Rose Elliott</OrgSL:personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002"/>
+        <OrgSL:teamName>Pied Piper</OrgSL:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <OrgSL:teamName>Team Apollo</OrgSL:teamName>
+        <OrgSL:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</OrgSL:teamPurpose>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <OrgSL:personName>Aron Roberts</OrgSL:personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
+        <OrgSL:webDomain>piedpiper.com</OrgSL:webDomain>
     </owl:NamedIndividual>
 </rdf:RDF>
 
