@@ -33,6 +33,17 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildUnit -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildUnit">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentUnit"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:comment>Indicates a Topology Unit which is a child of this Unit (i.e. level-down). Example: Tribe (parent) has the child unit Squad.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasLeader -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasLeader">
@@ -60,7 +71,6 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentTeam -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentTeam">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>Indicates a Team which is the parent of this Team (i.e. level-up). Example: Team Apollo is part of the Analytics Tribe (parent team).</rdfs:comment>
@@ -68,14 +78,22 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentUnit -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentUnit">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <rdfs:comment>Indicates a Topology Unit which is the parent of this Unit (i.e. level-up). Example: Squad unit is part of the Tribe unit (parent).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasUnit -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasUnit">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasChildTeam"/>
         <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
-        <rdfs:comment></rdfs:comment>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
     </owl:ObjectProperty>
     
 
@@ -102,23 +120,11 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#transitiveChildTeam">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitOf">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasParentTeam"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
-        <rdfs:comment>Indicates an Organization of which this Topology Unit is a part of, e.g. a Tribe or Business Area within an Organization.</rdfs:comment>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
     </owl:ObjectProperty>
     
 
@@ -146,7 +152,6 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamName -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -156,7 +161,6 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamPurpose -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#teamPurpose">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -166,7 +170,6 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitName -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#unitName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -176,9 +179,8 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#webDomain -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#webDomain">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -225,7 +227,6 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:comment>A Team such as a Squad or Tribe which is part of some larger Organization and only has full recognition within the context of that Organization. In particular the topology unit would not be regarded as a legal entity in its own right.</rdfs:comment>
         <rdfs:label>TopologyUnit</rdfs:label>
     </owl:Class>
@@ -247,7 +248,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b4eb133e-3936-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002"/>
+        <orgsl-v0:hasParentUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ef5fbc86-3936-11ed-a261-0242ac120002"/>
         <orgsl-v0:unitName>Mission</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
@@ -257,7 +258,6 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002"/>
         <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fc0e4ae6-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:teamName>Analytics</orgsl-v0:teamName>
     </owl:NamedIndividual>
@@ -268,7 +268,6 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ec441dfa-3934-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002"/>
         <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:teamName>Team K2</orgsl-v0:teamName>
     </owl:NamedIndividual>
@@ -279,7 +278,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ef5fbc86-3936-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0c7cbcbe-3929-11ed-a261-0242ac120002"/>
+        <orgsl-v0:hasParentUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#091b9ca8-3937-11ed-a261-0242ac120002"/>
         <orgsl-v0:unitName>Business Unit</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
@@ -309,7 +308,6 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#091b9ca8-3937-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2395675c-3929-11ed-a261-0242ac120002"/>
         <orgsl-v0:unitName>Company</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
@@ -339,6 +337,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b4eb133e-3936-11ed-a261-0242ac120002"/>
         <orgsl-v0:unitName>Tribe</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
@@ -348,7 +347,6 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-        <owl:sameAs rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002"/>
         <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:teamName>Team Apollo</orgsl-v0:teamName>
         <orgsl-v0:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</orgsl-v0:teamPurpose>
@@ -360,6 +358,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#763251fe-3934-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Topology"/>
+        <orgsl-v0:hasParentUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6115da6e-3936-11ed-a261-0242ac120002"/>
         <orgsl-v0:unitName>Squad</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
@@ -378,7 +377,6 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization"/>
-        <orgsl-v0:hasUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#88d4b7d6-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:webDomain>piedpiper.com</orgsl-v0:webDomain>
     </owl:NamedIndividual>
 </rdf:RDF>
