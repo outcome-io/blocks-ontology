@@ -441,7 +441,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#46641e3f-b314-4b30-94cd-6884c2e010f3">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Discipline"/>
-        <orgsl-v0:hasParentUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#46641e3f-b314-4b30-94cd-6884c2e010f3"/>
+        <orgsl-v0:hasParentUnit rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1e3ba655-cbc0-4d65-9ab6-c0cc02482ebb"/>
         <orgsl-v0:unitName>Mega-chapter</orgsl-v0:unitName>
     </owl:NamedIndividual>
     
