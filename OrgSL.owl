@@ -163,16 +163,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#memberOf -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#memberOf">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partOfTeam"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Member"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#modelHasTeamType -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#modelHasTeamType">
@@ -207,26 +197,6 @@
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partOfType">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Type"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partnerOf -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partnerOf">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partOfTeam"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Partner"/>
-        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#stakeholderOf -->
-
-    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#stakeholderOf">
-        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partOfTeam"/>
-        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Stakeholder"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
     </owl:ObjectProperty>
     
@@ -394,14 +364,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Member -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Member">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization">
@@ -412,27 +374,11 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Partner -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Partner">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-    </owl:Class>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person -->
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person">
         <rdfs:comment>A human being regarded as a person.</rdfs:comment>
         <rdfs:label>Person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Stakeholder -->
-
-    <owl:Class rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Stakeholder">
-        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
     </owl:Class>
     
 
@@ -816,9 +762,7 @@
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Member"/>
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-        <orgsl-v0:memberOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
         <orgsl-v0:partOfTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
         <orgsl-v0:personName>Aron Roberts</orgsl-v0:personName>
     </owl:NamedIndividual>
