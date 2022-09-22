@@ -576,6 +576,7 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:partOfLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fbb39625-3373-4380-8909-fa91e5d1af30"/>
+        <orgsl-v0:partOfType rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90abae7e-df52-490a-8c81-f3176850db93"/>
         <orgsl-v0:teamName>Team K2</orgsl-v0:teamName>
     </owl:NamedIndividual>
     
