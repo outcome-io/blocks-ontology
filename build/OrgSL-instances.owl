@@ -378,7 +378,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90dc771f-78e1-4ff8-87d2-439b3c616507">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Type"/>
-        <orgsl-v0:typePartOfModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90abae7e-df52-490a-8c81-f3176850db93"/>
+        <orgsl-v0:typePartOfModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#d8492390-5965-4554-9643-9e87d1e18f9a"/>
         <orgsl-v0:teamTypeName>Complicated Sub-system Team</orgsl-v0:teamTypeName>
     </owl:NamedIndividual>
     
