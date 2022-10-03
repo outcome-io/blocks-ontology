@@ -856,6 +856,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#16d8797d-f26e-459f-b8ed-a33693592e63">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#93dee1cc-8527-469e-8d10-dd04bdaff83e"/>
         <orgsl-v0:roleName>Engineering Manager</orgsl-v0:roleName>
     </owl:NamedIndividual>
     
@@ -1044,6 +1045,7 @@
         <orgsl-v0:partOfLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fbb39625-3373-4380-8909-fa91e5d1af30"/>
         <orgsl-v0:partOfType rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#9657b136-e5aa-428c-a98f-5db4235b5637"/>
         <orgsl-v0:relationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#73d8718e-75c7-4ab6-b0a9-82bebbe31410"/>
+        <orgsl-v0:relationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2"/>
         <orgsl-v0:relationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#93dee1cc-8527-469e-8d10-dd04bdaff83e"/>
         <orgsl-v0:teamName>Team Apollo</orgsl-v0:teamName>
         <orgsl-v0:teamPurpose>Our purpose is to enable effortless reporting overview to Pied Piper customers</orgsl-v0:teamPurpose>
@@ -1104,11 +1106,23 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#89f9e625-1fe7-4f27-85d6-ad21fa5e63f8"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#809af98a-3861-11ed-a261-0242ac120002">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#73d8718e-75c7-4ab6-b0a9-82bebbe31410"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2"/>
         <orgsl-v0:memberOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
         <orgsl-v0:personName>Aron Roberts</orgsl-v0:personName>
     </owl:NamedIndividual>
@@ -1128,6 +1142,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#89f9e625-1fe7-4f27-85d6-ad21fa5e63f8">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2"/>
         <orgsl-v0:roleName>QA Engineer</orgsl-v0:roleName>
     </owl:NamedIndividual>
     
