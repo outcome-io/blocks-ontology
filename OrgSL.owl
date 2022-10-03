@@ -657,7 +657,6 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_of_people"/>
         <orgsl-v0:hasMember rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#2ddf9d3e-3863-11ed-a261-0242ac120002"/>
-        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#93dee1cc-8527-469e-8d10-dd04bdaff83e"/>
         <orgsl-v0:partOfLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6cec1bc9-48e0-4ca1-9282-b22914bca4cb"/>
         <orgsl-v0:teamName>Growth Hacking</orgsl-v0:teamName>
     </owl:NamedIndividual>
