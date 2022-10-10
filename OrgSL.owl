@@ -919,12 +919,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#cb7ab167-a054-44d3-bc29-53c6063a1b14 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#cb7ab167-a054-44d3-bc29-53c6063a1b14"/>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#cef9942f-c60c-4012-b044-869038bda6cc -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#cef9942f-c60c-4012-b044-869038bda6cc">
@@ -1465,18 +1459,6 @@
     
 
 
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90abae7e-df52-490a-8c81-f3176850db93 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90abae7e-df52-490a-8c81-f3176850db93"/>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90dc771f-78e1-4ff8-87d2-439b3c616507 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#90dc771f-78e1-4ff8-87d2-439b3c616507"/>
-    
-
-
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#92827013-8ca8-4b86-9503-40cc57a9eb95 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#92827013-8ca8-4b86-9503-40cc57a9eb95">
@@ -1504,12 +1486,6 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Status"/>
         <orgsl-v0:statusName>Planned</orgsl-v0:statusName>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#9657b136-e5aa-428c-a98f-5db4235b5637 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#9657b136-e5aa-428c-a98f-5db4235b5637"/>
 </rdf:RDF>
 
 
