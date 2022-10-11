@@ -208,6 +208,16 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasPartnerRole -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasPartnerRole">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partnerRoleOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Role_Model"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasPerson -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasPerson">
@@ -263,6 +273,16 @@
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <rdfs:comment>Indicates a Person who is a stakeholder of a particular Team. Inverse of `team:stakeholderOf`, see that property for further clarification.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasStakeholderRole -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#hasStakeholderRole">
+        <owl:inverseOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#stakeholderRoleOf"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Role_Model"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
     </owl:ObjectProperty>
     
 
@@ -408,6 +428,15 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partnerRoleOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#partnerRoleOf">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Role_Model"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#personOf -->
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#personOf">
@@ -464,6 +493,15 @@
         <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#personOf"/>
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#stakeholderRoleOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#stakeholderRoleOf">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Role_Model"/>
     </owl:ObjectProperty>
     
 
@@ -1015,7 +1053,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
-        <orgsl-v0:modelName>Stakeholder</orgsl-v0:modelName>
+        <orgsl-v0:stakeholderRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#891d6a55-44c7-4a33-8494-c3e2533c6ef9"/>
+        <orgsl-v0:roleName>Stakeholder</orgsl-v0:roleName>
     </owl:NamedIndividual>
     
 
@@ -1338,7 +1377,8 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#22602ab0-8725-4b56-b0ad-89e27f554829">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
-        <orgsl-v0:modelName>Partner</orgsl-v0:modelName>
+        <orgsl-v0:partnerRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#891d6a55-44c7-4a33-8494-c3e2533c6ef9"/>
+        <orgsl-v0:roleName>Partner</orgsl-v0:roleName>
     </owl:NamedIndividual>
     
 
@@ -1677,6 +1717,8 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Role_Model"/>
         <orgsl-v0:hasChildModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#736672a3-2d8a-4dbd-bffd-9a8949db0fa4"/>
         <orgsl-v0:hasChildModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#770b169b-4b23-4117-8d40-24c521f379bb"/>
+        <orgsl-v0:hasPartnerRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#22602ab0-8725-4b56-b0ad-89e27f554829"/>
+        <orgsl-v0:hasStakeholderRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399"/>
         <orgsl-v0:modelName>Product Team Role Model</orgsl-v0:modelName>
         <orgsl-v0:modelSource>Private</orgsl-v0:modelSource>
     </owl:NamedIndividual>
