@@ -698,6 +698,15 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#rolePrimary -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#rolePrimary">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#statusName -->
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#statusName">
@@ -1016,10 +1025,22 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a7f500fd-bd1c-4bef-9426-403b479dd3b2 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a7f500fd-bd1c-4bef-9426-403b479dd3b2">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0b7eb1c3-59c6-4520-948e-144fa8415855"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#22602ab0-8725-4b56-b0ad-89e27f554829"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aab053b9-2fd3-4de3-9937-33e952531908 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aab053b9-2fd3-4de3-9937-33e952531908">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Member_Role"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#50321b39-1a74-437f-86fd-5a20bc590a14"/>
         <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#8b2a1fc6-5730-4aae-abe7-85f00e577aa2"/>
         <orgsl-v0:teamMemberRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#736672a3-2d8a-4dbd-bffd-9a8949db0fa4"/>
         <orgsl-v0:roleName>Software Engineer</orgsl-v0:roleName>
@@ -1053,6 +1074,9 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ba9c7db0-f44f-473f-8fe3-6b7f1d274d95"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#35aea4aa-b13d-47ba-b442-bfa49ef0ec68"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7c606ea2-9466-4a25-86fb-b2ae613e97e3"/>
         <orgsl-v0:stakeholderRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#891d6a55-44c7-4a33-8494-c3e2533c6ef9"/>
         <orgsl-v0:roleName>Stakeholder</orgsl-v0:roleName>
     </owl:NamedIndividual>
@@ -1075,6 +1099,17 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <orgsl-v0:stakeholderOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
         <orgsl-v0:personName>John Spilken</orgsl-v0:personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ba9c7db0-f44f-473f-8fe3-6b7f1d274d95 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ba9c7db0-f44f-473f-8fe3-6b7f1d274d95">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b7d5163b-5a42-45f9-819e-a0f6fca5115b"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
     </owl:NamedIndividual>
     
 
@@ -1240,6 +1275,17 @@
     
 
 
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0a388ea8-dcae-42fe-a5fd-5de007e46816 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0a388ea8-dcae-42fe-a5fd-5de007e46816">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0d856487-269e-440a-a733-02464c82a812"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1f467a81-7cc5-41d5-8eb2-cd28721d566e"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0b7eb1c3-59c6-4520-948e-144fa8415855 -->
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0b7eb1c3-59c6-4520-948e-144fa8415855">
@@ -1281,6 +1327,28 @@
         <orgsl-v0:hasParentTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#f7eb8844-d9dd-4f04-b2cc-742173824d11"/>
         <orgsl-v0:partOfDisciplineLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#5eb3d948-5d16-4fc8-bf09-bc2bdeb7a04a"/>
         <orgsl-v0:teamName>Frontend</orgsl-v0:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0837c566-9615-4cfd-9fed-59a71fc710f8 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0837c566-9615-4cfd-9fed-59a71fc710f8">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#92827013-8ca8-4b86-9503-40cc57a9eb95"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a3146e3d-3525-4e2c-95a4-6e2f2c9d5df6"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1a6d03b6-0059-4aa3-926d-dabbb301f096 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1a6d03b6-0059-4aa3-926d-dabbb301f096">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7be78464-5f9e-49b9-aa01-1da5ec3404ea"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1316dad5-9493-497c-af53-3fc1d2b1e59a"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
     </owl:NamedIndividual>
     
 
@@ -1378,6 +1446,7 @@
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#22602ab0-8725-4b56-b0ad-89e27f554829">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Role"/>
         <orgsl-v0:partnerRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#891d6a55-44c7-4a33-8494-c3e2533c6ef9"/>
+        <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a7f500fd-bd1c-4bef-9426-403b479dd3b2"/>
         <orgsl-v0:roleName>Partner</orgsl-v0:roleName>
     </owl:NamedIndividual>
     
@@ -1392,6 +1461,17 @@
         <orgsl-v0:partOfTeamLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1e3ba655-cbc0-4d65-9ab6-c0cc02482ebb"/>
         <orgsl-v0:teamName>Pied Piper</orgsl-v0:teamName>
         <orgsl-v0:webDomain>piedpiper.com</orgsl-v0:webDomain>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#35aea4aa-b13d-47ba-b442-bfa49ef0ec68 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#35aea4aa-b13d-47ba-b442-bfa49ef0ec68">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a5b2da9a-0f22-4cf7-b0de-9c9eea0599ac"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
     </owl:NamedIndividual>
     
 
@@ -1477,6 +1557,17 @@
         <orgsl-v0:hasChildTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7dfd6b38-6246-4646-a438-0166b3f589d2"/>
         <orgsl-v0:partOfDisciplineLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#46641e3f-b314-4b30-94cd-6884c2e010f3"/>
         <orgsl-v0:teamName>Product</orgsl-v0:teamName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#50321b39-1a74-437f-86fd-5a20bc590a14 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#50321b39-1a74-437f-86fd-5a20bc590a14">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7df1533d-dc11-4326-b788-0aa2371fc65e"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aab053b9-2fd3-4de3-9937-33e952531908"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
     </owl:NamedIndividual>
     
 
@@ -1575,6 +1666,17 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
         <orgsl-v0:memberOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
         <orgsl-v0:personName>George Freeman</orgsl-v0:personName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7c606ea2-9466-4a25-86fb-b2ae613e97e3 -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7c606ea2-9466-4a25-86fb-b2ae613e97e3">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Relationship"/>
+        <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#4baa6974-4f0e-445f-85f0-ac618a57dd3d"/>
+        <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399"/>
+        <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
     </owl:NamedIndividual>
     
 
