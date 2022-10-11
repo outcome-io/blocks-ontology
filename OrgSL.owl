@@ -932,6 +932,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a5b2da9a-0f22-4cf7-b0de-9c9eea0599ac">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#35aea4aa-b13d-47ba-b442-bfa49ef0ec68"/>
         <orgsl-v0:personName>Gus Malone</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1010,6 +1011,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#b7d5163b-5a42-45f9-819e-a0f6fca5115b">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ba9c7db0-f44f-473f-8fe3-6b7f1d274d95"/>
         <orgsl-v0:personName>John Spilken</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1228,6 +1230,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0b7eb1c3-59c6-4520-948e-144fa8415855">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a7f500fd-bd1c-4bef-9426-403b479dd3b2"/>
         <orgsl-v0:personName>Rue Zane</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1250,6 +1253,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0d856487-269e-440a-a733-02464c82a812">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0a388ea8-dcae-42fe-a5fd-5de007e46816"/>
         <orgsl-v0:personName>Chloé Johnson</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1430,6 +1434,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#4baa6974-4f0e-445f-85f0-ac618a57dd3d">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7c606ea2-9466-4a25-86fb-b2ae613e97e3"/>
         <orgsl-v0:personName>Dorothee Rivers</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1625,6 +1630,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7be78464-5f9e-49b9-aa01-1da5ec3404ea">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#1a6d03b6-0059-4aa3-926d-dabbb301f096"/>
         <orgsl-v0:personName>George Freeman</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1675,6 +1681,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7df1533d-dc11-4326-b788-0aa2371fc65e">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#50321b39-1a74-437f-86fd-5a20bc590a14"/>
         <orgsl-v0:personName>Kate Sweet</orgsl-v0:personName>
     </owl:NamedIndividual>
     
@@ -1742,15 +1749,6 @@
         <orgsl-v0:hasTeamLeadRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#95a644e4-41bd-4062-8ac3-9d7e6691c4e9"/>
         <orgsl-v0:modelName>Riot Team Leadership Model</orgsl-v0:modelName>
         <orgsl-v0:modelSource>Public</orgsl-v0:modelSource>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#78e4ef72-4a01-4391-ba37-a75de22323c1 -->
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#78e4ef72-4a01-4391-ba37-a75de22323c1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
-        <orgsl-v0:personName>Kurt Swish</orgsl-v0:personName>
     </owl:NamedIndividual>
     
 
@@ -1828,6 +1826,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#92827013-8ca8-4b86-9503-40cc57a9eb95">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Person"/>
+        <orgsl-v0:hasRelationship rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#0837c566-9615-4cfd-9fed-59a71fc710f8"/>
         <orgsl-v0:personName>Zach Efron</orgsl-v0:personName>
     </owl:NamedIndividual>
     
