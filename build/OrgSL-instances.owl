@@ -47,6 +47,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a5863282-26cf-49d5-8448-693d5b8d4c37">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Structure_Model"/>
+        <orgsl-v0:hasParentModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#e6b86456-b2a0-4a38-8ca9-11cd2618a83b"/>
         <orgsl-v0:layerOfTeamStructureModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#da6b913b-c288-4239-bb5b-7954aff14009"/>
         <orgsl-v0:layerOfTeamStructureModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#fbb39625-3373-4380-8909-fa91e5d1af30"/>
         <orgsl-v0:layerOfTeamStructureModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6f05ead9-9c9d-4f85-aabf-854958a731d9"/>
@@ -81,6 +82,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a9af96f6-da0a-4ca3-8fce-c551f0e684f3">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Structure_Model"/>
+        <orgsl-v0:hasParentModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#e6b86456-b2a0-4a38-8ca9-11cd2618a83b"/>
         <orgsl-v0:teamStructureModelHasLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#46641e3f-b314-4b30-94cd-6884c2e010f3"/>
         <orgsl-v0:teamStructureModelHasLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#5eb3d948-5d16-4fc8-bf09-bc2bdeb7a04a"/>
         <orgsl-v0:modelName>Discipline Structure Model</orgsl-v0:modelName>
@@ -223,6 +225,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#c8915988-7409-4700-a455-607f6e30c792">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Team_Structure_Model"/>
+        <orgsl-v0:hasParentModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#e6b86456-b2a0-4a38-8ca9-11cd2618a83b"/>
         <orgsl-v0:teamStructureModelHasLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6cec1bc9-48e0-4ca1-9282-b22914bca4cb"/>
         <orgsl-v0:modelName>Community Structure Model</orgsl-v0:modelName>
     </owl:NamedIndividual>
@@ -278,6 +281,19 @@
         <orgsl-v0:layerOfTeam rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#ea56ce40-3928-11ed-a261-0242ac120002"/>
         <orgsl-v0:teamStructureModelHasLayer rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a5863282-26cf-49d5-8448-693d5b8d4c37"/>
         <orgsl-v0:layerName>Tribe</orgsl-v0:layerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#e6b86456-b2a0-4a38-8ca9-11cd2618a83b -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#e6b86456-b2a0-4a38-8ca9-11cd2618a83b">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#Organization_Structure_Model"/>
+        <orgsl-v0:hasChildModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a5863282-26cf-49d5-8448-693d5b8d4c37"/>
+        <orgsl-v0:hasChildModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#a9af96f6-da0a-4ca3-8fce-c551f0e684f3"/>
+        <orgsl-v0:hasChildModel rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#c8915988-7409-4700-a455-607f6e30c792"/>
+        <orgsl-v0:modelName>Pied Piper Structure Model</orgsl-v0:modelName>
+        <orgsl-v0:modelSource>Private</orgsl-v0:modelSource>
     </owl:NamedIndividual>
     
 
@@ -889,6 +905,7 @@
         <orgsl-v0:hasPerson rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#4baa6974-4f0e-445f-85f0-ac618a57dd3d"/>
         <orgsl-v0:hasRole rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#aff1c023-47d1-4a75-8e0c-448e65f93399"/>
         <orgsl-v0:relationshipOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#7d4dd398-3865-11ed-a261-0242ac120002"/>
+        <orgsl-v0:relationshipPrimary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</orgsl-v0:relationshipPrimary>
     </owl:NamedIndividual>
     
 
@@ -1007,6 +1024,7 @@
         <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#877dbe75-21b9-4537-b4bb-1bfa2daff669"/>
         <orgsl-v0:teamLeadRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#6ba15388-2624-4a65-9854-c41f91bdbbd8"/>
         <orgsl-v0:roleName>Team Lead</orgsl-v0:roleName>
+        <orgsl-v0:rolePrimary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</orgsl-v0:rolePrimary>
     </owl:NamedIndividual>
     
 
@@ -1122,6 +1140,7 @@
         <orgsl-v0:roleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#d20080e2-e789-4a01-a68f-830d5cd5d9da"/>
         <orgsl-v0:teamLeadRoleOf rdf:resource="https://raw.githubusercontent.com/outcome-io/orgsl-test/main/OrgSL.owl#770b169b-4b23-4117-8d40-24c521f379bb"/>
         <orgsl-v0:roleName>Team Captain</orgsl-v0:roleName>
+        <orgsl-v0:rolePrimary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</orgsl-v0:rolePrimary>
     </owl:NamedIndividual>
     
 
@@ -1151,5 +1170,6 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
 
 
